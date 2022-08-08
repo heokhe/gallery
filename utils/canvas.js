@@ -1,4 +1,4 @@
-const SCALE = 10
+const SCALE = 5
 
 export function setupCanvas() {
   const canvas = document.querySelector('canvas')
