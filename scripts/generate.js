@@ -10,7 +10,7 @@ if (!templates.includes(template)) {
   process.exit(1)
 }
 
-const title = await question('artwork title: ')
+const title = (await question('artwork title: ')).trim()
 let slug = slugify(title)
 slug = await question(`artwork slug (${slug}): `) || slug
 
