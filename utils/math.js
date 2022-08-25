@@ -12,3 +12,5 @@ export const rand = (a, b) => a === b ? a : Math.random() * (b - a) + a
  * @param {number} k [0, 1]
  */
 export const lerp = (a, b, k) => (b - a) * k + a
+
+export const range = (a, b) => Array.from({ length: b - a + 1 }).map((_, i) => a + i)
